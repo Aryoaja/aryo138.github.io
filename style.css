@@ -1,0 +1,198 @@
+/* Reset dan Style Dasar */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Font modern */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Latar belakang gradien */
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6; /* Menggabungkan properti */
+}
+
+/* Gambar */
+img {
+    width: 300px; /* Mengatur ukuran gambar */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 10px; /* Memberikan jarak antar gambar */
+}
+
+.image-container {
+    display: flex; /* Membuat gambar sejajar secara horizontal */
+    align-items: center; /* Menyelaraskan gambar dengan teks di tengah */
+    margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+    text-align: justify;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    color: #ffcc00;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+a:hover {
+    background: #ffcc00;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Heading */
+h1, h2 {
+    font-weight: 600;
+}
+
+/* Navigasi */
+nav {
+    background: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+/* Konten Halaman */
+.content {
+    display: none;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.content.active {
+    display: block;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Blog Post */
+.blog-post {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: scale(1.05);
+}
+
+.blog-post h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #f0f0f0;
+}
+
+.blog-post img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Galeri */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Ikon Media Sosial */
+.social-icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    color: #bbb;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .content {
+        width: 90%;
+        padding: 20px;
+    }
+
+    a {
+        font-size: 0.9rem;
+    }
+
+    .blog-post h2 {
+        font-size: 1.5rem;
+    }
+}

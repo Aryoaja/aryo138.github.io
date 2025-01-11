@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pribadi Aryo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.content');
+            pages.forEach(page => page.style.display = 'none');
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        window.onload = function() {
+            showPage('article1');
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('article1')">Beranda</a></li>
+            <li><a href="#" onclick="showPage('bogor')">About Me</a></li>
+            <li><a href="#" onclick="showPage('article3')">Photo Gallery</a></li>
+            <li><a href="#" onclick="showPage('article4')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="article1" class="content">
+        <h1>Selamat Datang di Website Pribadi Saya</h1>
+        <p>Karena Tuhan yang maha esa dengan ini saya berhasil mengerjakan tugas web pribadi ini dengan sebaik-baiknya</p>
+    
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3><a href="Blog4.html" target="_blank">STTI NIIT (I-Tech)</a></h3>
+            <img src="logo itech.png" alt="I-Tech">
+            <p>Sekolah Tinggi Teknologi Informasi NIIT atau dikenal dengan I-Tech berawal dari lembaga profesional course NIIT dari India. <a href="Blog4.html" target="_blank">Klik untuk baca lebih lanjut</a></p>
+        </div>
+    
+        <div class="blog-post">
+            <h3><a href="Blog5.html" target="_blank">Pengantar Teknologi Informasi</a></h3>
+            <p>Pengantar Teknologi Informasi merupakan mata kuliah yang dirancang untuk memperkenalkan mahasiswa pada dunia teknologi informasi yang terus berkembang <a href="Blog5.html" target="_blank">Klik untuk baca lebih lanjut </a></p>
+        </div>
+    
+        <div class="blog-post">
+            <h3><a href="Blog6.html" target="_blank">Tujuan Saya Kuliah </a></h3>
+            <img src="bljr.jpg" alt="belajar">
+            <p>Tujuan utama saya melanjutkan kuliah adalah untuk memperdalam pengetahuan dan keterampilan di bidang yang saya minati, terutama teknologi informasi dan pengembangan perangkat lunak. Saya ingin memiliki dasar teori yang kuat dan keterampilan praktis yang dapat diterapkan dalam dunia kerja, sehingga saya mampu berkontribusi secara maksimal di industri teknologi yang terus berkembang. <a href="Blog6.html" target="_blank">Klik untuk baca lebih lanjut </a></p>
+        </div>
+    </div>
+    
+    <div id="bogor" class="content">
+        <h1>About Me</h1>
+        <div class="blog-post">
+            <h2><a href="blog1.html" target="_blank">Pendidikan Saya</a></h2>
+            <img src="Smks Addawah.jpg" alt="SMKS Ad-dawah">
+            </p>Saya merupakan lulusan dari SMKS Addawah Jakarta Barat ada tahun 2024.<a href="Blog1.html" target="_blank">Klik untuk baca lebih lanjut </a></p>
+        </div>
+    
+        <div class="blog-post">
+            <h2><a href="blog2.html" target="_blank">Siapa Saya?</a></h2>
+            <img src="ancol.jpg" alt="Poto Sendiri">
+            <p>Halo, perkenalkan nama saya Muhammad Aryo Fadillah, biasa dipanggil Aryo. Saya berusia 19 tahun dan merupakan seorang lulusan baru. Selama masa pendidikan, saya aktif mempelajari berbagai hal, termasuk pengembangan web dan teknologi informasi.<a href="Blog2.html" target="_blank">Klik untuk baca lebih lanjut </a></p>
+        </div>
+    
+        <div class="blog-post">
+            <h2><a href="blog3.html" target="_blank">Pengalaman</a></h2>
+            <p>Saya mempunyai berbagai macam pengalaman dalam bidang industri dan pengiriman.<a href="Blog3.html" target="_blank">Klik untuk baca lebih lanjut </a></p>
+        </div>        
+    </div>
+    
+    <div id="article3" class="content">
+        <h1>Photo Gallery</h1>
+        <p>Selamat datang di galeri foto saya!</p>
+        <img src="poto galeri.jpg" alt="Pengalaman">
+    </div>
+
+    <div id="article4" class="content">
+        <h1>Contact Person</h1>
+        <p>Hubungi saya disini.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/62895616067503" target="_blank" class="fab fa-whatsapp"></a>
+            <a href="https://www.facebook.com/YourPage" target="_blank" class="fab fa-facebook"></a>
+            <a href="https://www.instagram.com/m.aryofdllh" target="_blank" class="fab fa-instagram"></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Website Aryo 138. All rights reserved.</p>
+    </footer>
+</body>
+</html>
